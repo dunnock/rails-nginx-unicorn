@@ -3,6 +3,9 @@ MAINTAINER ChangHoon Jeong <iamseapy@gmail.com>
 
 ENV RUBY_APP /app
 
+# Override default configs from seapy
 ADD nginx-sites.conf /etc/nginx/sites-enabled/default
+ADD unicorn.rb /app/config/unicorn.rb
+ADD Procfile /app/Procfile
 
 EXPOSE 80
