@@ -1,5 +1,7 @@
 # Rails(+ Nginx, Unicorn) Dockerfile Pro
 
+Inherited from seapy/rails-nginx-unicorn-pro, extended file upload size up to 20MB
+
 Easy useable docker for rails. more configuration, affordable production.
 
 ## What's include
