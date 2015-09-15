@@ -7,6 +7,11 @@ dependencies:
     - docker build -t lits/rails-nginx-unicorn:v2.2.0 .
     - docker tag -f lits/rails-nginx-unicorn:v2.2.0 lits/rails-nginx-unicorn:latest
 
+test:
+  override:
+    - docker images
+
+
 deployment:
   hub:
     branch: develop
