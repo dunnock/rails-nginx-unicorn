@@ -1,4 +1,4 @@
-app_dir = "/app"
+app_dir = ENV['RUBY_APP']
  
 working_directory app_dir
  

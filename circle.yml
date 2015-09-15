@@ -1,0 +1,15 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t lits/rails-nginx-unicorn:v2.2.0 .
+    - docker tag -f lits/rails-nginx-unicorn:v2.2.0 lits/rails-nginx-unicorn:latest
+
+deployment:
+  hub:
+    branch: develop
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push lits/rails-nginx-unicorn
