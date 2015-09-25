@@ -3,7 +3,7 @@ MAINTAINER ChangHoon Jeong <iamseapy@gmail.com>
 
 #Install image magick
 RUN apt-get update
-RUN apt-get -qq -y install libmagickwand-dev imagemagick
+RUN apt-get -qq -y install libmagickwand-dev imagemagick libimage-exiftool-perl
 
 #Overload this variable to set root path of your application, e.g.  ENV RUBY_APP /pipeline/source for wercker build
 ENV RUBY_APP /app
