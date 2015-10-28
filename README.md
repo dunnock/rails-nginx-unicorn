@@ -102,4 +102,3 @@ place your unicorn config to `config/unicorn.rb`
 ## foreman
 
 place your Procfile to app root
-
